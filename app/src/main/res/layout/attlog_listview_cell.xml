@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvVerifyStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvVerifyType"
+        android:layout_alignBottom="@+id/tvVerifyType"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tp_VerifyStatus"
+        android:textColor="@drawable/gray" />
+
+    <TextView
+        android:id="@+id/tvWorkcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvVerifyStatus"
+        android:layout_alignRight="@+id/tvVerifyTime"
+        android:text="@string/tp_WorkCode" 
+        android:textColor="@drawable/gray"/>
+
+    <TextView
+        android:id="@+id/tvVerifyType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUserPIN"
+        android:layout_below="@+id/tvUserPIN"
+        android:text="@string/tp_VerifyType"
+        android:textColor="@drawable/gray" />
+
+    <TextView
+        android:id="@+id/tvVerifyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green"
+        android:drawablePadding="5dp"
+        android:paddingBottom="3dp"  
+        android:paddingLeft="5dp"  
+        android:paddingRight="5dp"  
+        android:paddingTop="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvWorkcode"
+        android:layout_marginRight="13dp"
+        android:text="@string/tp_VerifyTime" />
+
+    <TextView
+        android:id="@+id/tvUserPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/tp_UserPIN"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

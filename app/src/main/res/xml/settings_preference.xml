@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:title="Settings">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="isOfflineMode"
+        android:summary="use the offline mode"
+        android:title="Offline Mode" />
+
+    <PreferenceScreen android:title="Change Account" >
+        <intent
+            android:targetClass="com.colorfuldays.LoginActivity"
+            android:targetPackage="com.colorfuldays"
+            android:data="@string/log_in"/>
+    </PreferenceScreen>
+
+</PreferenceScreen>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitleBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/zkteco"
+        android:textColor="@drawable/textColor_white"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/lineColor" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp" >
+
+            <ImageView
+                android:id="@+id/ivUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/todo"
+                android:padding="0dp"
+                android:src="@drawable/login_user" />
+
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:ems="10"
+                android:hint="@string/user_id"
+                android:inputType="number"
+                android:textStyle="italic" >
+
+                <requestFocus android:layout_width="wrap_content" />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LinearLayout_User"
+            android:layout_below="@+id/LinearLayout_User"
+            android:layout_marginTop="14dp" >
+
+            <ImageView
+                android:id="@+id/ivPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/todo"
+                android:padding="0dp"
+                android:src="@drawable/login_password" />
+
+            <EditText
+                android:id="@+id/edtPassward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="numberPassword"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/LinearLayout_Pwd"
+            android:layout_below="@+id/LinearLayout_Pwd"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_login"
+            android:text="@string/log_in"
+            android:textColor="@drawable/textColor_white" />
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/sign_in"
+            android:textColor="@drawable/textColor_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbRemUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/LinearLayout_Pwd"
+            android:text="@string/rember_me"
+            android:textColor="@drawable/textColor_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout_User"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/tvServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/set_server"
+            android:textColor="@drawable/textColor_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp" >
+
+            <ImageView
+                android:id="@+id/ivServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/todo"
+                android:padding="0dp"
+                android:src="@drawable/login_server" />
+
+            <EditText
+                android:id="@+id/edtIPaddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/ip_address"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_ComKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LinearLayout_Server"
+            android:layout_below="@+id/LinearLayout_Server"
+            android:layout_marginTop="14dp" >
+
+            <ImageView
+                android:id="@+id/ivComKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/todo"
+                android:padding="0dp"
+                android:src="@drawable/login_comkey" />
+
+            <EditText
+                android:id="@+id/edtComKey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/comkey"
+                android:inputType="number"
+                android:textStyle="italic" />
+        </LinearLayout>
+        
+        <CheckBox
+            android:id="@+id/cbRemServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/LinearLayout_ComKey"
+            android:text="@string/rember_me"
+            android:textColor="@drawable/textColor_white" />
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/cbRemServer"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_login"
+            android:text="@string/test"
+            android:textColor="@drawable/textColor_white" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/btnTest"
+            android:layout_alignBottom="@+id/btnTest"
+            android:layout_toRightOf="@+id/tvServer"
+            android:background="@drawable/btn_login"
+            android:text="@string/save"
+            android:textColor="@drawable/textColor_white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/tv_setup"
+        android:gravity="center_vertical"
+        android:text="@string/setup"
+        android:textColor="@drawable/btn_color"
+        android:textSize="18sp"
+        android:textStyle="bold" >
+    </TextView>
+
+</RelativeLayout>

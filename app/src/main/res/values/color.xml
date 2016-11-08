@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="background">#444648</drawable>
+    <drawable name="textColor_white">#ffffff</drawable>
+    <drawable name="lineColor">#FF909090</drawable>
+    <drawable name="pressed_blue">#0595F5</drawable>
+    
+    <drawable name="gray">#7E7F80</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="green">#7BBD27</drawable>
+    <drawable name="orange">#EE7100</drawable>
+
+</resources>

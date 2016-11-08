@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ColorfulDays</string>
+    <string name="action_settings">Settings</string>
+    <string name="version">Version:build 8.88.888</string>
+    <string name="title_Version">Build Version:</string>
+    <string name="developtime">Date:2016-07-18,22:47</string>
+    <string name="todo">TODO</string>
+    <string name="zkteco">ZKTeco</string>
+    <string name="log_in">log in</string>
+    <string name="user_id">user id</string>
+    <string name="password">password</string>
+    <string name="ip_address">IP Address</string>
+    <string name="sign_in">sign in</string>
+    <string name="setup">Setup</string>
+    <string name="set_server">set server</string>
+    <string name="comkey">comkey</string>
+    <string name="test">test</string>
+    <string name="save">save</string>
+    <string name="rember_me">rember me ?</string>
+    <string name="menu">Menu</string>
+    <string name="attlog">Attlog</string>
+    <string name="note">Note</string>
+    <string name="more">More</string>
+    <string name="check_in">Check-In</string>
+    <string name="check_out">Check-Out</string>
+    <string name="tp_UserPIN">tvUserPIN</string>
+    <string name="tp_VerifyStatus">tvVerifyStatus</string>
+    <string name="tp_WorkCode">tvWorkcode</string>
+    <string name="tp_VerifyType">tvVerifyType</string>
+    <string name="tp_VerifyTime">tvVerifyTime</string>
+    <string name="tp_ItemName">tvItemName</string>
+    <string name="tp_ItemValue">tvItemValue</string>
+    <string name="deviceInfo">DeviceInfo</string>
+    <string name="userInfo">UserInfo</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/ivItemImage"
+        android:gravity="center_vertical"
+        android:text="@string/tp_ItemName"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/ivItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tvItemName"
+        android:layout_marginLeft="19dp"
+        android:contentDescription="@string/todo"
+        android:gravity="center_vertical"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

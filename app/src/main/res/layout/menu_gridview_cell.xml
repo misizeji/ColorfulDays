@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.colorfuldays.ui.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemGridMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="noTag"
+    android:layout_gravity="center"
+    android:background="@drawable/gridview_cell"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/ivItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivItemImage"
+        android:layout_centerHorizontal="true" />
+
+</com.colorfuldays.ui.SquareLayout>
