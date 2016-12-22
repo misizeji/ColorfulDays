@@ -5,7 +5,7 @@ This is an android studio projects, it use the ZKTeco's soap sdk to developed th
 Make your's devices already have the webserver function, so it can support the soap then will make the app be effective. 
 Thank you ! 
 ##Screenshots
-![StartShot](http://service.zkteco.com/xwiki/bin/download/14-FirmwareDevelopCenter/Frodo.Ji%27s+Blog/SvreenShots.jpg)
+![StartShot](https://github.com/misizeji/ColorfulDays/blob/master/pictures/colorday.png)
 
 ##FunctionList
  - _TA function, if we are connect to the TA devices, so we can punch the card._
