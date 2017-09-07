@@ -1,19 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        keyStore {
-            storeFile file('D:/Android_Keystore/colordays/ZKColorfulDays')
-            storePassword 'ZKTeco187'
-        }
-    }
     compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId "com.colorfuldays"
         minSdkVersion 14
         targetSdkVersion 23
-        signingConfig signingConfigs.keyStore
     }
     buildTypes {
         release {
